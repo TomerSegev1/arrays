@@ -92,5 +92,5 @@ const firstCharEachWord = (stringsArray) => {
     const string = stringsArray.split(" ")
     return string.map(string => {
         return string.charAt(0)
-    });
-}  
+    }).join('');
+} 
