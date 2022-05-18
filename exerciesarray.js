@@ -86,5 +86,11 @@ const lengthOfWords = (stringsArray) => {
         return string.length;
     });
 }  
-console.log(lengthOfWords("la la la la"))
 
+//ex12
+const firstCharEachWord = (stringsArray) => {
+    const string = stringsArray.split(" ")
+    return string.map(string => {
+        return string.charAt(0)
+    });
+}  
