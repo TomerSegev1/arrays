@@ -53,3 +53,10 @@ const stringsLengthsExtra = (stringsArray) => {
         return string + string.length;
     });
 }  
+
+//ex8
+const stringsExtra = (stringsArray) => {
+    return stringsArray.map(string => {
+        return string + "";
+    });
+}
