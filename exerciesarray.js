@@ -60,3 +60,12 @@ const stringsExtra = (stringsArray) => {
         return string + "";
     });
 }
+
+//ex9
+const sumPositiveNumbers = (numbersArray) => {
+    return numbersArray.filter(number => {
+        return number > 0;
+    }).reduce((accumulator, number) => {
+        return accumulator + number;
+    } ,0)
+} 
