@@ -46,3 +46,10 @@ const stringsLengths = (stringsArray) => {
         return string.length;
     });
 } 
+
+//ex7
+const stringsLengthsExtra = (stringsArray) => {
+    return stringsArray.map(string => {
+        return string + string.length;
+    });
+}  
