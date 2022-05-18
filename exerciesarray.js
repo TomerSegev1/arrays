@@ -1,13 +1,13 @@
 //ex1
-const SumNumbersArray = (NumbersArray) => {
-    return NumbersArray.reduce((accumulator, number) => {
+const sumNumbersArray = (numbersArray) => {
+    return numbersArray.reduce((accumulator, number) => {
         return accumulator + number; 
      } ,0);
 }
 
 //ex2
-const StrongNumbersArray = (NumbersArray) => {
-    return NumbersArray.map(number => {
+const strongNumbersArray = (numbersArray) => {
+    return numbersArray.map(number => {
         for (i = 0; i < number; i++) {
             return number = number * number;
         }
@@ -15,8 +15,8 @@ const StrongNumbersArray = (NumbersArray) => {
 }
 
 //ex3
-const MulNumbersArray = (NumbersArray) => {
-    return NumbersArray.reduce((accumulator, number) => {
+const mulNumbersArray = (numbersArray) => {
+    return numbersArray.reduce((accumulator, number) => {
          for (i = 0; i < number; i++) {
           return number * accumulator;
         }
@@ -24,11 +24,18 @@ const MulNumbersArray = (NumbersArray) => {
 }
 
 //ex4
-const FindHighestNumber = (NumbersArray) => {
-    return NumbersArray.reduce((accumulator, number) => {
+const findHighestNumber = (numbersArray) => {
+    return numbersArray.reduce((accumulator, number) => {
         if(number > accumulator)
             return number;
         else
             return accumulator;
-    }, NumbersArray[0]);
+    }, numbersArray[0]);
+}
+
+//ex5
+const higherThanSix = (numbersArray) => {
+    return numbersArray.filter(number => {
+        return number > 6;
+    });
 }
