@@ -39,3 +39,10 @@ const higherThanSix = (numbersArray) => {
         return number > 6;
     });
 }
+
+//ex6
+const stringsLengths = (stringsArray) => {
+    return stringsArray.map(string => {
+        return string.length;
+    });
+} 
