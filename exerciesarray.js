@@ -80,8 +80,11 @@ const numbersQuantityBetween = (numbersArray, number1, number2) => {
 }
 
 //ex11
-const lengthOfStrings = (stringsArray) => {
-    return stringsArray.map(string => {
+const lengthOfWords = (stringsArray) => {
+    const string = stringsArray.split(" ")
+    return string.map(string => {
         return string.length;
     });
-}
+}  
+console.log(lengthOfWords("la la la la"))
+
