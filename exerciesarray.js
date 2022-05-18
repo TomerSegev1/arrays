@@ -69,3 +69,12 @@ const sumPositiveNumbers = (numbersArray) => {
         return accumulator + number;
     } ,0)
 } 
+
+//ex10
+const numbersQuantityBetween = (numbersArray, number1, number2) => {
+    return numbersArray.filter(number => {
+        return number >= number1 && number <= number2;
+    }).reduce((accumulator) => {
+        return accumulator + 1;
+    } ,0)
+}
