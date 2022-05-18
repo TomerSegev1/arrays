@@ -78,3 +78,10 @@ const numbersQuantityBetween = (numbersArray, number1, number2) => {
         return accumulator + 1;
     } ,0)
 }
+
+//ex11
+const lengthOfStrings = (stringsArray) => {
+    return stringsArray.map(string => {
+        return string.length;
+    });
+}
