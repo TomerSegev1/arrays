@@ -9,7 +9,7 @@ const SumNumbersArray = (NumbersArray) => {
 const StrongNumbersArray = (NumbersArray) => {
     return NumbersArray.map(number => {
         for (i = 0; i < number; i++) {
-            return number = number * number
+            return number = number * number;
         }
     });
 }
@@ -18,7 +18,17 @@ const StrongNumbersArray = (NumbersArray) => {
 const MulNumbersArray = (NumbersArray) => {
     return NumbersArray.reduce((accumulator, number) => {
          for (i = 0; i < number; i++) {
-          return number * accumulator
+          return number * accumulator;
         }
-    } ,1)
+    } ,1);
+}
+
+//ex4
+const FindHighestNumber = (NumbersArray) => {
+    return NumbersArray.reduce((accumulator, number) => {
+        if(number > accumulator)
+            return number;
+        else
+            return accumulator;
+    }, NumbersArray[0]);
 }
